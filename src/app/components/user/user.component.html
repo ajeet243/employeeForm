@@ -1,0 +1,34 @@
+<h2>User Form</h2>
+<div style="outline-style: auto; margin: 1%; padding: 2%;">
+  <form [formGroup]="userform" (ngSubmit)="onSubmit(userform.value)">
+    <mat-form-field class="user_inputs">
+      <input matInput type="text" placeholder="name" formControlName="name">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="user_inputs">
+      <input matInput type="text" placeholder="email" formControlName="email">
+    </mat-form-field>
+    <br>
+
+      image : <input type="file" (change)="handleFileInput($event.target.files)" formControlName="upload_img">
+
+    <br>
+    <mat-form-field class="user_inputs">
+      <input matInput type="Phone" placeholder="Phone" formControlName="Phone_No">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="user_inputs">
+      <input matInput type="text" placeholder="location" formControlName="location">
+    </mat-form-field>
+
+    <br>
+    <mat-form-field class="user_inputs">
+      <input matInput type="text" placeholder="address" formControlName="address">
+    </mat-form-field>
+    <br>
+
+    <button color="primary" type="submit">Submit</button>
+    //routing to userlist
+    <button style="position: absolute; right:60%" color="primary" type="button" (click)="existing_users()">existingUser</button>
+  </form>
+</div>
