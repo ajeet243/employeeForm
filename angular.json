@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "addEmployee"
+  "defaultProject": "addEmployee",
+  "cli": {
+    "analytics": "ac3e1f46-d43b-488e-8f26-5415f270f83b"
+  }
 }
